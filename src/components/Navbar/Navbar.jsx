@@ -7,16 +7,12 @@ const Navbar = () => {
       <div className="main-menu hidden-xs hidden-sm hidden-md">
         <div id="nav">
           <nav className="main-nav">
-            <ul className="clearfix">
-              <li>
-                <NavLink to="/">Thuốc</NavLink>
-              </li>
-              <li>
-                <NavLink to="/">Thực phẩm chức năng</NavLink>
-              </li>
-              <li>
-                <NavLink to="/">Thiết bị, dụng cụ y tế</NavLink>
-              </li>
+            <ul className="clearfix" >
+              <li>Thuốc</li>
+              <li>Thực phẩm chức năng</li>
+              <li>Thiết bị, dụng cụ y tế</li>
+              <li>Mỹ phẩm</li>
+              <li>Chăm sóc cá nhân</li>
             </ul>
           </nav>
         </div>{" "}

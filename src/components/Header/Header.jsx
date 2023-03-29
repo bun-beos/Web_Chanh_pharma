@@ -4,7 +4,6 @@ import Navbar from "../Navbar/Navbar";
 import TopBar from "../TopBar/TopBar";
 import useToken from "../../hooks/useToken";
 import { CheckError } from "../../utils/CheckError";
-
 import "./Header.css";
 const Header = () => {
   // const [cartCount, setCartCount] = useState([]);
@@ -15,27 +14,7 @@ const Header = () => {
     e.preventDefault();
     navigate("/collections/" + searchId);
   };
-  //call API
-  // useEffect(() => {
-  //   fetch("http://localhost:8080/cart", {
-  //     method: "GET",
-  //     headers: {
-  //       Authorization: `Bearer ${token}`,
-  //     },
-  //   })
-  //     .then(CheckError)
-  //     .then((result) => {
-  //       setCartCount(
-  //         result.cartItems.reduce(
-  //           (accumulator, item) => accumulator + parseInt(item.quantity),
-  //           0
-  //         )
-  //       );
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }, []);
+ 
   return (
     <header id="header" className="clearfix">
       {/* <TopBar /> */}
@@ -54,7 +33,7 @@ const Header = () => {
                 itemProp="logo"
               />
             </Link>
-          </div>
+          </div> 
         </div>
         <Navbar />
         <div className="padding-lr-0 col-xs-12 col-sm-9 col-md-9 col-lg-3">
