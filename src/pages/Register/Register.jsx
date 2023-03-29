@@ -40,6 +40,7 @@ const Register = () => {
   return (
     <div className="register">
       <div className="layout-account">
+        
         {/* path */}
         <div className="padding-rl-40">
           <div class="breadcrumb-shop">
@@ -62,6 +63,7 @@ const Register = () => {
             </div>{" "}
           </div>
         </div>
+
         {/* name-page */}
         <div className="col-md-6 col-xs-12 wrapbox-heading-page">
           <div className="header-page clearfix">
@@ -70,6 +72,7 @@ const Register = () => {
         </div>
 
         <div className="col-md-6 col-xs-12 wrapbox-content-page">
+
           {/* register-box */}
           <div id="register" className="userbox">
             <div className="accounttype">

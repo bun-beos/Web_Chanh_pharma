@@ -5,6 +5,9 @@ import TopBar from "../TopBar/TopBar";
 import useToken from "../../hooks/useToken";
 import { CheckError } from "../../utils/CheckError";
 import "./Header.css";
+import {TfiShoppingCart} from "react-icons/tfi";
+import {TfiUser} from "react-icons/tfi";
+
 const Header = () => {
   // const [cartCount, setCartCount] = useState([]);
   // const { token } = useToken();
@@ -17,8 +20,9 @@ const Header = () => {
  
   return (
     <header id="header" className="clearfix">
-      {/* <TopBar /> */}
-      <div className="main-header hidden-xs">
+      <div className="main-header hidden-xs"> 
+
+        {/* logo  */}
         <div className="padding-lr-0 col-xs-12 col-sm-3 col-md-3 col-lg-2">
           <div
             className="logo-main"
@@ -35,34 +39,28 @@ const Header = () => {
             </Link>
           </div> 
         </div>
+
         <Navbar />
+
         <div className="padding-lr-0 col-xs-12 col-sm-9 col-md-9 col-lg-3">
           <div className="rightHeader">
             <div className="bagHeader">
               <span>
                 <Link to="/cart" title="Giỏ hàng">
-                  <img
-                    src="//theme.hstatic.net/200000000133/1000569834/14/bagIcon2.png?v=6303"
-                    alt="Giỏ hàng"
-                  />
-                  {/* <span className="countCart">{cartCount}</span> */}
+                  <TfiShoppingCart size='30px'color='white'/>
                 </Link>
               </span>
             </div>
             <div className="accountHeader">
               <Link to="/account" title="Tài khoản">
-                <img
-                  src="//theme.hstatic.net/200000000133/1000569834/14/accountIcon.png?v=6303"
-                  alt="Tài khoản"
-                />
+                <TfiUser size='30px' color='white'/>
               </Link>
             </div>
             <div className="searchHeader">
               <form
                 action="/search"
                 className="searchDesktop"
-                onSubmit={(e) => handleSearch(e)}
-              >
+                onSubmit={(e) => handleSearch(e)}>
                 <input type="hidden" name="type" value="product" />
                 <input
                   required=""

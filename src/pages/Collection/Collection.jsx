@@ -84,10 +84,20 @@ const Collection = () => {
       </div>{" "}
     </div>
   ));
-  return (
+return (
     <div id="collection" className="collection-page">
       <div className="padding-rl-40">
         <div className="main-content">
+        <div className="padding-rl-40 breadcrumb-shop">
+          <ol className="breadcrumb breadcrumb-arrows">
+            <li>
+              <Link to="/">Trang chủ</Link>
+            </li>
+            <li>
+              <Link to="/collection">Sản phẩm</Link>
+            </li>
+          </ol>
+        </div>
           <div class="breadcrumb-shop">
             <div
               class=""
