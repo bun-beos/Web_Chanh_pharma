@@ -1,10 +1,11 @@
-.clearfix {
-  font-size: 18px;
-}
-.main-menu {
-  margin-top: 24px;
+.main-menu ul{
+  margin-top: 0;
 }
 .i_angle_down {
   padding-top: 12px;
   font-size: 24px;
+}
+.main-nav {
+  margin-top: 40px;
+  margin-left: 16px;
 }

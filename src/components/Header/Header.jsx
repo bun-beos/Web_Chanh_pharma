@@ -17,32 +17,25 @@ const Header = () => {
     e.preventDefault();
     navigate("/collections/" + searchId);
   };
- 
+  var image_Logo = require('../../assets/images/Elegant Beauty and Spa Studio Logo Template.png')
+  
   return (
     <header id="header" className="clearfix">
       <div className="main-header hidden-xs"> 
 
         {/* logo  */}
         <div className="padding-lr-0 col-xs-12 col-sm-3 col-md-3 col-lg-2">
-          <div
-            className="logo-main"
-            itemScope=""
-            itemType="http://schema.org/Organization"
-          >
-            <Link to="/">
+          <div className="logo-main">
               <img
-                src="//file.hstatic.net/1000358207/file/logo_eva.svg"
-                alt="Eva De Eva"
-                className="img-responsive logoimg"
-                itemProp="logo"
-              />
-            </Link>
+                src={image_Logo}
+              /> 
           </div> 
         </div>
 
         <Navbar />
 
         <div className="padding-lr-0 col-xs-12 col-sm-9 col-md-9 col-lg-3">
+          
           <div className="rightHeader">
             <div className="bagHeader">
               <span>
@@ -51,11 +44,13 @@ const Header = () => {
                 </Link>
               </span>
             </div>
+
             <div className="accountHeader">
               <Link to="/account" title="Tài khoản">
                 <TfiUser size='30px' color='white'/>
               </Link>
             </div>
+
             <div className="searchHeader">
               <form
                 action="/search"

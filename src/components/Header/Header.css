@@ -1,13 +1,12 @@
 #header {
   width: 100%;
   background-color: #e84e72;
-  color: white;
 }
 .padding-lr-0 {
   padding: 0;
 }
 .topbar {
-  padding: 5px 24px;
+  padding:5px 24px;
   float: left;
   width: 100%;
   border-bottom: 1px solid #f1f1f1;
@@ -30,17 +29,18 @@
   -ms-transition: all 0.6s ease-in-out 0s;
 }
 .main-menu nav > ul > li > a {
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   padding: 15px 0;
   float: left;
+  color: white;
 }
 .main-menu nav > ul > li > a:hover {
-  color: #e29481;
+  color: #a3d3e1;
   font-weight: bold;
 }
 .main-header {
-  padding: 20px 24px;
+  padding: 10px 24px;
   float: left;
   width: 100%;
   position: relative;
@@ -56,6 +56,7 @@
   margin: 0;
 }
 .rightHeader > div {
+  margin-top: 40px;
   float: right;
 }
 .searchHeader {
@@ -178,7 +179,12 @@
 .main-menu ul.sub_menu li:hover > ul {
   opacity: 1;
 }
-
-.logo-main img {
-  max-width: 190px;
+.col-lg-2 {
+  margin-left: 50px;
+  width: 9.666667%;
+}
+.logo-main img{
+  margin-left: 60px;
+  width: 130px;
+  height: 118px;
 }

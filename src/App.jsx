@@ -15,13 +15,13 @@ const App = () => {
       <Layout>
         <Routes>
           {/* <Route exact path="/" element={<Home />}></Route> */}
-          <Route exact path="/" element={<Collection />}></Route>
+          <Route exact path="/collection" element={<Collection />}></Route>
           <Route path="/:productId" element={<Product />}></Route>
           <Route path="/account/login" element={<LogIn />}></Route>
           <Route path="/account/register" element={<Register />}></Route>
           <Route path="/account" element={<Account />}></Route>
           <Route path="/cart" element={<Cart />}></Route>
-          <Route path="/body" element={<Body />} ></Route>
+          <Route path="/" element={<Body />} ></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Routes>
       </Layout>
