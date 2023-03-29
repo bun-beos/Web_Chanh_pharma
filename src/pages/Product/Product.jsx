@@ -100,7 +100,7 @@ const Product = () => {
                       id="detail-product"
                     >
                       <div className="nameProductDetail" itemprop="name">
-                        <h1>{product.name}</h1>
+                        <h1 style={{height:100}}>{product.name}</h1>
                       </div>
                       <div className="skuProduct">
                         <label>SKU:</label>
