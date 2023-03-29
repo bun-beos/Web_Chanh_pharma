@@ -1,32 +1,35 @@
 import { React, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import mockData from "../../mock/product/product";
+import "./Collection.css";
+import {TfiFilter} from "react-icons/tfi";
+
 const catgoryList = [
-  { name: "Áo", id: "shirt" },
-  { name: "Quần", id: "pant" },
-  { name: "Váy", id: "dress" },
-  { name: "Tất cả sản phẩm", id: "all" },
+  { name: "Giải độc mát gan", id: "shirt" },
+  { name: "Giải nhiệt miệng", id: "pant" },
+  { name: "Giải rượu", id: "dress" },
+  // { name: "Tất cả sản phẩm", id: "all" },
 ];
 const Collection = () => {
   const [productList, setProductList] = useState(mockData);
   const [selectedCategory, setSelectedCategory] = useState("all");
-  // const fetchData = (selectedCategory) => {
-  //   try {
-  //     fetch("localhost:8080/item/category/" + selectedCategory)
-  //       .then((response) => {
-  //         return response.json();
-  //       })
-  //       .then((data) => {
-  //         setProductList(data);
-  //       });
-  //   } catch (err) {
-  //     console.log(err.message);
-  //   }
-  // };
+  const fetchData = (selectedCategory) => {
+    try {
+      fetch("localhost:8080/item/category/" + selectedCategory)
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          setProductList(data);
+        });
+    } catch (err) {
+      console.log(err.message);
+    }
+  };
 
-  // useEffect(() => {
-  //   fetchData(selectedCategory);
-  // }, [selectedCategory]);
+  useEffect(() => {
+    fetchData(selectedCategory);
+  }, [selectedCategory]);
   const handleCatgoryClick = (e) => {
     e.preventDefault();
     setSelectedCategory(e.target.id);
@@ -81,24 +84,26 @@ const Collection = () => {
       </div>{" "}
     </div>
   ));
-  return (
+return (
     <div id="collection" className="collection-page">
       <div className="padding-rl-40">
         <div className="main-content">
+        <div className="padding-rl-40 breadcrumb-shop">
+          <ol className="breadcrumb breadcrumb-arrows">
+            <li>
+              <Link to="/">Trang chủ</Link>
+            </li>
+            <li>
+              <Link to="/collection">Thực phẩm chức năng</Link>
+            </li>
+          </ol>
+        </div>
           <div class="breadcrumb-shop">
             <div
               class=""
               itemscope=""
               itemtype="http://data-vocabulary.org/Breadcrumb"
             >
-              <ol class="breadcrumb breadcrumb-arrows">
-                <li>
-                  <Link to="/">Trang chủ</Link>
-                </li>
-                <li class="active">
-                  <span>Sản phẩm</span>
-                </li>
-              </ol>
             </div>{" "}
           </div>
           <div className=" banner-collection-header"></div>
@@ -106,244 +111,16 @@ const Collection = () => {
             <div className="wrap-collection-title">
               <div className="heading-collection">
                 <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                  <h1 className="titlePageAll">
-                    <span>Sản phẩm</span>
-                    <span className="visible-xs arrowToggle">
-                      <i className="fa fa-sort-down"></i>
-                    </span>
-                  </h1>
-                  <ul className="menuCollection">{catgoryListGen}</ul>
+                
+                  {/* Menu */}
+                  <ul className="menuCollection">
+                    <a className="btn_item"><TfiFilter/>Lọc</a>
+                    <a className="btn_item">Giải độc rượu</a>
+                    <a className="btn_item">Giảm nhiệt miệng</a>
+                    <a className="btn_item">Giải độc gan</a>
+                  </ul>
                 </div>
-                <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                  <div className="filter-custom">
-                    <div className="append-search"></div>
-                    <span>Bộ lọc:</span>
-                    <div className="group-filter" aria-expanded="true">
-                      <div className="layered_subtitle dropdown-filter">
-                        <span>Size</span>
-                        <span className="icon-control">
-                          <i className="fa fa-sort-down"></i>
-                        </span>
-                      </div>
-                      <div className="layered-content filter-size s-filter">
-                        <ul className="check-box-list clearfix">
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="data-size-p1"
-                              value="S"
-                              name="size-filter"
-                              data-size="(variant:product**S)"
-                            />
-                            <label for="data-size-p1">
-                              <span className="button"></span>S
-                            </label>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="data-size-p2"
-                              value="M"
-                              name="size-filter"
-                              data-size="(variant:product**M)"
-                            />
-                            <label for="data-size-p2">
-                              <span className="button"></span>M
-                            </label>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="data-size-p3"
-                              value="L"
-                              name="size-filter"
-                              data-size="(variant:product**L)"
-                            />
-                            <label for="data-size-p3">
-                              <span className="button"></span>L
-                            </label>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="data-size-p4"
-                              value="XL"
-                              name="size-filter"
-                              data-size="(variant:product**XL)"
-                            />
-                            <label for="data-size-p4">
-                              <span className="button"></span>
-                              XL
-                            </label>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div className="group-filter" aria-expanded="true">
-                      <div className="layered_subtitle dropdown-filter">
-                        <span>Màu sắc</span>
-                        <span className="icon-control">
-                          <i className="fa fa-sort-down"></i>
-                        </span>
-                      </div>
-                      <div className="layered-content filter-color s-filter">
-                        <ul className="check-box-list">
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="color1"
-                              value="Hồng"
-                              name="color-filter"
-                              data-color="(variant:product**Hồng)"
-                            />
-                            <label
-                              style={{ backgroundColor: "#ef5777" }}
-                              for="color1"
-                            >
-                              <span className="button"></span>
-                            </label>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="color2"
-                              value="Vàng"
-                              name="color-filter"
-                              data-color="(variant:product**Vàng)"
-                            />
-                            <label
-                              style={{ backgroundColor: "#ffd32a" }}
-                              for="color2"
-                            >
-                              <span className="button"></span>
-                            </label>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="color3"
-                              value="Xám"
-                              name="color-filter"
-                              data-color="(variant:product**Xám)"
-                            />
-                            <label
-                              style={{ backgroundColor: "#d2dae2" }}
-                              for="color3"
-                            >
-                              <span className="button"></span>
-                            </label>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="color4"
-                              value="Xanh"
-                              name="color-filter"
-                              data-color="(variant:product**Xanh)"
-                            />
-                            <label
-                              style={{ backgroundColor: "#3c40c6" }}
-                              for="color4"
-                            >
-                              <span className="button"></span>
-                            </label>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="color5"
-                              value="Xanh lá"
-                              name="color-filter"
-                              data-color="(variant:product**Xanh lá)"
-                            />
-                            <label
-                              style={{ backgroundColor: "#0be881" }}
-                              for="color5"
-                            >
-                              <span className="button"></span>
-                            </label>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="color6"
-                              value="Sen"
-                              name="color-filter"
-                              data-color="(variant:product**Sen)"
-                            />
-                            <label
-                              style={{ backgroundColor: "#f53b57" }}
-                              for="color6"
-                            >
-                              <span className="button"></span>
-                            </label>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="color7"
-                              value="Xanh biển"
-                              name="color-filter"
-                              data-color="(variant:product**Xanh biển)"
-                            />
-                            <label
-                              style={{ backgroundColor: "#0fbcf9" }}
-                              for="color7"
-                            >
-                              <span className="button"></span>
-                            </label>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="color8"
-                              value="Đen"
-                              name="color-filter"
-                              data-color="(variant:product**Đen)"
-                            />
-                            <label
-                              style={{ backgroundColor: "#000000" }}
-                              for="color8"
-                            >
-                              <span className="button"></span>
-                            </label>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="color9"
-                              value="Trắng"
-                              name="color-filter"
-                              data-color="(variant:product**Trắng)"
-                            />
-                            <label
-                              style={{ backgroundColor: "#ffffff" }}
-                              for="color9"
-                            >
-                              <span className="button"></span>
-                            </label>
-                          </li>
-                          <li>
-                            <input
-                              type="checkbox"
-                              id="color10"
-                              value="Đỏ"
-                              name="color-filter"
-                              data-color="(variant:product**Đỏ)"
-                            />
-                            <label
-                              style={{ backgroundColor: "#ff3f34" }}
-                              for="color10"
-                            >
-                              <span className="button"></span>
-                            </label>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                
               </div>
             </div>
             <div className="clear-fix filter-here">

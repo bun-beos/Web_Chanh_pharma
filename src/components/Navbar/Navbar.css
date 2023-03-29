@@ -1,7 +1,10 @@
-.active {
-  font-weight: bold;
-  color: #e29481;
-}
 .clearfix {
-  font-size: 20px;
+  font-size: 18px;
+}
+.main-menu {
+  margin-top: 24px;
+}
+.i_angle_down {
+  padding-top: 12px;
+  font-size: 24px;
 }

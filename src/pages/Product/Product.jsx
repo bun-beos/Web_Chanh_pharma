@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { useParams, useNavigate } from "react-router-dom";
 import mockData from "../../mock/product/product";
 import useToken from "../../hooks/useToken";
@@ -63,6 +64,16 @@ const Product = () => {
             <div className="padding-rl-40">
               <div className="main-content">
                 <div className="product-detail-wrapper">
+                  <div className="padding-rl-40 breadcrumb-shop">
+                    <ol className="breadcrumb breadcrumb-arrows">
+                      <li>
+                        <Link to="/">Trang chủ</Link>
+                      </li>
+                      <li>
+                        <Link to="/collection/:productId">Thực phẩm chức năng</Link>
+                      </li>
+                    </ol>
+                  </div>
                   <div className="clearfix product-detail-main pr_style_01">
                     <div className="no-pd-l col-md-8 col-sm-12 col-xs-12">
                       <div className="product-gallery">
@@ -100,7 +111,7 @@ const Product = () => {
                       id="detail-product"
                     >
                       <div className="nameProductDetail" itemprop="name">
-                        <h1 style={{height:100}}>{product.name}</h1>
+                        <h1 style={{ height: 100 }}>{product.name}</h1>
                       </div>
                       <div className="skuProduct">
                         <label>SKU:</label>
