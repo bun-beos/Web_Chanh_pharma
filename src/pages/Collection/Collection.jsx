@@ -63,11 +63,11 @@ const Collection = () => {
         </div>
         <div class="product-detail clearfix">
           <div class="box-pro-detail">
-            <h3 class="pro-name">
+            <p class="pro-name">
               <Link to={`${product.productId}`} title={product.name}>
                 {product.name}
               </Link>
-            </h3>
+            </p>
             <div class="box-pro-prices">
               <p class="pro-price highlight">
                 <span>{product.price}</span>
