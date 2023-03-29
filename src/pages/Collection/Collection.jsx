@@ -94,7 +94,7 @@ return (
               <Link to="/">Trang chủ</Link>
             </li>
             <li>
-              <Link to="/collection">Sản phẩm</Link>
+              <Link to="/collection">Thực phẩm chức năng</Link>
             </li>
           </ol>
         </div>

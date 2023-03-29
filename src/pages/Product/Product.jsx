@@ -70,7 +70,7 @@ const Product = () => {
                         <Link to="/">Trang chủ</Link>
                       </li>
                       <li>
-                        <Link to="/collection/:productId">Sản phẩm</Link>
+                        <Link to="/collection/:productId">Thực phẩm chức năng</Link>
                       </li>
                     </ol>
                   </div>
