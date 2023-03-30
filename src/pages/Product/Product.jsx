@@ -21,7 +21,7 @@ async function addProductToCart(orderInfo, token) {
 const Product = () => {
   const navigate = useNavigate();
   let { productId } = useParams();
-  const product = mockData.find((product) => product.productId === productId);
+  const product = mockData.find((product) => product.productId === (productId+""));
   const [selectedQuantity, setSelectedQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState("");
 
@@ -113,10 +113,10 @@ const Product = () => {
                       <div className="nameProductDetail" itemprop="name">
                         <h1 style={{ height: 100 }}>{product.name}</h1>
                       </div>
-                      <div className="skuProduct">
+                      {/* <div className="skuProduct">
                         <label>SKU:</label>
                         <span>{product.sku}</span>
-                      </div>
+                      </div> */}
                       <div className="infoLine1">
                         <div className="product-price" id="price-preview">
                           <span className="pro-price">{product.price}</span>
@@ -132,8 +132,14 @@ const Product = () => {
                           data-platform="haravan"
                           data-id="1040226379"
                         >
-                          <p>{product.description}</p>
-                          <p>Màu sắc: NA</p>
+                          <p> <b>Công dụng: </b> {product.congdung}</p>
+                          <p> <b>Đối tượng: </b> {product.doituong}</p>
+                          <p> <b>Thương hiệu: </b> {product.thuonghieu}</p>
+                          <p> <b>Nhà sản xuất: </b> {product.nhasanxuat}</p>
+                          <p> <b>Nơi sản xuất: </b> {product.noisanxuat}</p>
+                          <p> <b>Dạng bào chế: </b> {product.dangbaoche}</p>
+                          <p> <b>Cách đóng gói: </b> {product.cachdonggoi}</p>
+                          <p> <b>Hạn sử dụng: </b> {product.hansudung}</p>
                         </div>
                       </div>
                       <form
@@ -150,8 +156,8 @@ const Product = () => {
                               data-option="option2"
                               data-option-index="1"
                             >
-                              <div className="header hide">Kích thước:</div>
-                              <div className="select-swap sizeEachSwatch ">
+                              {/* <div className="header hide">Kích thước:</div> */}
+                              {/* <div className="select-swap sizeEachSwatch ">
                                 {sizeList.map((size) => (
                                   <div className="n-sd swatch-element">
                                     <input
@@ -172,7 +178,7 @@ const Product = () => {
                                     </label>
                                   </div>
                                 ))}
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                         </div>
