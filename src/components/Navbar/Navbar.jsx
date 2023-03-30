@@ -21,7 +21,6 @@ const Navbar = () => {
                 <a href="" >Chăm sóc cá nhân<TfiAngleDown className="i_angle_down"/></a>
               </li>
             </ul>
-            
           </nav>
         </div>{" "}
       </div>
