@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/chanh-pharma/static/css/main.3740cca3.css",
-    "main.js": "/chanh-pharma/static/js/main.35ae4cad.js",
+    "main.js": "/chanh-pharma/static/js/main.000583b1.js",
     "index.html": "/chanh-pharma/index.html",
     "static/media/an_khang_du_thuoc.png": "/chanh-pharma/static/media/an_khang_du_thuoc.f81064fd4e86162eb64d.png",
     "static/media/slider.png": "/chanh-pharma/static/media/slider.7cda895b9ee9d0c5c702.png",
@@ -12,10 +12,10 @@
     "static/media/slider_1_image_1.png": "/chanh-pharma/static/media/slider_1_image_1.3b46bc40a4c8ff148c8c.png",
     "static/media/slider_1_3.gif": "/chanh-pharma/static/media/slider_1_3.3e30362c2d5556a481e0.gif",
     "main.3740cca3.css.map": "/chanh-pharma/static/css/main.3740cca3.css.map",
-    "main.35ae4cad.js.map": "/chanh-pharma/static/js/main.35ae4cad.js.map"
+    "main.000583b1.js.map": "/chanh-pharma/static/js/main.000583b1.js.map"
   },
   "entrypoints": [
     "static/css/main.3740cca3.css",
-    "static/js/main.35ae4cad.js"
+    "static/js/main.000583b1.js"
   ]
 }
