@@ -1,5 +1,4 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 import {TfiAngleDown} from "react-icons/tfi";
 
@@ -13,7 +12,7 @@ const Navbar = () => {
               <li>
                 <a href="" >Thuốc<TfiAngleDown className="i_angle_down"/></a>
               </li><li>
-                <a href="/collection" >Thực phẩm chức năng<TfiAngleDown className="i_angle_down"/></a>
+                <a href="/Web_Chanh_pharma/collection" >Thực phẩm chức năng<TfiAngleDown className="i_angle_down"/></a>
               </li><li>
                 <a href="" >Thiết bị, dụng cụ y tế<TfiAngleDown className="i_angle_down"/></a>
               </li><li>

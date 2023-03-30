@@ -98,7 +98,7 @@ const Cart = () => {
             <div className="" itemType="http://data-vocabulary.org/Breadcrumb">
               <ol className="breadcrumb breadcrumb-arrows">
                 <li>
-                  <Link to="/">Trang chủ</Link>
+                  <Link to="/Web_Chanh_pharma">Trang chủ</Link>
                 </li>
                 <li className="active">
                   <span>Giỏ hàng</span>

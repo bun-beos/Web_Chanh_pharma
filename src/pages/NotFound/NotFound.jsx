@@ -13,7 +13,7 @@ const NotFound = () => {
             >
               <ol class="breadcrumb breadcrumb-arrows">
                 <li>
-                  <Link to="/" target="_self">
+                  <Link to="/Web_Chanh_pharma" target="_self">
                     Trang chủ
                   </Link>
                 </li>
@@ -25,7 +25,7 @@ const NotFound = () => {
             <div class="content-pagenot">
               <h1>Không tìm thấy trang</h1>
               <p class="subtext">Xin lỗi, chúng tôi không tìm thấy trang này</p>
-              <Link to="/">Trở về trang chủ</Link>
+              <Link to="/Web_Chanh_pharma">Trở về trang chủ</Link>
             </div>
           </div>
         </div>

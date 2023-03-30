@@ -91,10 +91,10 @@ return (
         <div className="padding-rl-40 breadcrumb-shop">
           <ol className="breadcrumb breadcrumb-arrows">
             <li>
-              <Link to="/">Trang chủ</Link>
+              <Link to="/Web_Chanh_pharma">Trang chủ</Link>
             </li>
             <li>
-              <Link to="/collection">Thực phẩm chức năng</Link>
+              <Link to="/Web_Chanh_pharma/collection">Thực phẩm chức năng</Link>
             </li>
           </ol>
         </div>

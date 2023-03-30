@@ -39,14 +39,14 @@ const Header = () => {
           <div className="rightHeader">
             <div className="bagHeader">
               <span>
-                <Link to="/cart" title="Giỏ hàng">
+                <Link to="/Web_Chanh_pharma/cart" title="Giỏ hàng">
                   <TfiShoppingCart size='30px'color='white'/>
                 </Link>
               </span>
             </div>
 
             <div className="accountHeader">
-              <Link to="/account" title="Tài khoản">
+              <Link to="/Web_Chanh_pharma/account/login" title="Tài khoản">
                 <TfiUser size='30px' color='white'/>
               </Link>
             </div>
