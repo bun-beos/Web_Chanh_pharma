@@ -292,8 +292,8 @@ input:focus {
     left: 125%;
   }
 }
-@-webkit-keyframes sticky_header_animation {
-  0% {
+/* @-webkit-keyframes sticky_header_animation { */
+  /* 0% {
     opacity: 0;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
@@ -303,4 +303,4 @@ input:focus {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
-}
+} */
