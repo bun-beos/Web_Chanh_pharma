@@ -44,10 +44,10 @@ const Account = () => {
                   <div class="AccountList">
                     <ul class="list-unstyled">
                       <li class="current">
-                        <Link to="/Web_Chanh_pharma/account">Thông tin tài khoản</Link>
+                        <Link to="/account">Thông tin tài khoản</Link>
                       </li>
                       <li class="last">
-                        <a href="/Web_Chanh_pharma/account/logout" onClick={(e) => logOut(e)}>
+                        <a href="/account/logout" onClick={(e) => logOut(e)}>
                           Đăng xuất
                         </a>
                       </li>

@@ -51,10 +51,10 @@ const Register = () => {
             >
               <ol class="breadcrumb breadcrumb-arrows">
                 <li>
-                  <Link to="/Web_Chanh_pharma">Trang chủ</Link>
+                  <Link to="/">Trang chủ</Link>
                 </li>
                 <li>
-                  <Link to="/Web_Chanh_pharma/account">Tài khoản</Link>
+                  <Link to="/account">Tài khoản</Link>
                 </li>
                 <li class="active">
                   <span>Ðăng ký</span>
@@ -183,7 +183,7 @@ const Register = () => {
                 </div>
               </div>
               <div className="clearfix req_pass">
-                <Link to="/Web_Chanh_pharma" className="comeback">
+                <Link to="/" className="comeback">
                   <i className="fa fa-long-arrow-left"></i> Quay lại trang chủ
                 </Link>
               </div>

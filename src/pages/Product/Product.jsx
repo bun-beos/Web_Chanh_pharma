@@ -47,7 +47,7 @@ const Product = () => {
           token
         );
         setTimeout(() => {
-          navigate("/Web_Chanh_pharma/cart");
+          navigate("/cart");
         }, 400);
       }
     }
@@ -67,10 +67,10 @@ const Product = () => {
                   <div className="padding-rl-40 breadcrumb-shop">
                     <ol className="breadcrumb breadcrumb-arrows">
                       <li>
-                        <Link to="/Web_Chanh_pharma">Trang chủ</Link>
+                        <Link to="/">Trang chủ</Link>
                       </li>
                       <li>
-                        <Link to="/Web_Chanh_pharma/collection">Thực phẩm chức năng</Link>
+                        <Link to="/collection">Thực phẩm chức năng</Link>
                       </li>
                     </ol>
                   </div>

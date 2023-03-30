@@ -51,10 +51,10 @@ const LogIn = () => {
         <div className="padding-rl-40 breadcrumb-shop">
           <ol className="breadcrumb breadcrumb-arrows">
             <li>
-              <Link to="/Web_Chanh_pharma">Trang chủ</Link>
+              <Link to="/">Trang chủ</Link>
             </li>
             <li>
-              <Link to="/Web_Chanh_pharma/account">Tài khoản</Link>
+              <Link to="/account">Tài khoản</Link>
             </li>
             <li className="active">
               <span>Đăng nhập</span>
@@ -131,12 +131,12 @@ const LogIn = () => {
                   />
                 </div>
                 <div className="req_pass">
-                  <Link to="/Web_Chanh_pharma/account/login" onClick={showRecoverPasswordForm}>
+                  <Link to="/account/login" onClick={showRecoverPasswordForm}>
                     Quên mật khẩu?
                   </Link>
                   <br />
                   hoặc{" "}
-                  <Link to="/Web_Chanh_pharma/account/register" title="Đăng ký">
+                  <Link to="/account/register" title="Đăng ký">
                     Đăng ký
                   </Link>
                 </div>
@@ -185,7 +185,7 @@ const LogIn = () => {
                   <input type="submit" className="btn" value="Gửi" />
                 </div>
                 <div className="req_pass">
-                  <Link to="/Web_Chanh_pharma/account/login" onClick={hideRecoverPasswordForm}>
+                  <Link to="/account/login" onClick={hideRecoverPasswordForm}>
                     Hủy
                   </Link>
                 </div>
