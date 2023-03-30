@@ -11,15 +11,15 @@ const Navbar = () => {
           <nav className="main-nav">
             <ul className="clearfix" >
               <li>
-                <a href="/collection" >Thuốc<TfiAngleDown className="i_angle_down"/></a>
+                <a href="" >Thuốc<TfiAngleDown className="i_angle_down"/></a>
               </li><li>
                 <a href="/collection" >Thực phẩm chức năng<TfiAngleDown className="i_angle_down"/></a>
               </li><li>
-                <a href="/collection" >Thiết bị, dụng cụ y tế<TfiAngleDown className="i_angle_down"/></a>
+                <a href="" >Thiết bị, dụng cụ y tế<TfiAngleDown className="i_angle_down"/></a>
               </li><li>
-                <a href="/collection" >Mỹ phẩm<TfiAngleDown className="i_angle_down"/></a>
+                <a href="" >Mỹ phẩm<TfiAngleDown className="i_angle_down"/></a>
               </li><li>
-                <a href="/collection" >Chăm sóc cá nhân<TfiAngleDown className="i_angle_down"/></a>
+                <a href="" >Chăm sóc cá nhân<TfiAngleDown className="i_angle_down"/></a>
               </li>
             </ul>
             
