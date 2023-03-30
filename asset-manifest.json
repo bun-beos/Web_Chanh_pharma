@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/Web_Chanh_pharma/static/css/main.3740cca3.css",
-    "main.js": "/Web_Chanh_pharma/static/js/main.f7d87044.js",
-    "index.html": "/Web_Chanh_pharma/index.html",
-    "static/media/an_khang_du_thuoc.png": "/Web_Chanh_pharma/static/media/an_khang_du_thuoc.f81064fd4e86162eb64d.png",
-    "static/media/slider.png": "/Web_Chanh_pharma/static/media/slider.7cda895b9ee9d0c5c702.png",
-    "static/media/deal.png": "/Web_Chanh_pharma/static/media/deal.0a09e05d7a330cbf8936.png",
-    "static/media/Elegant Beauty and Spa Studio Logo Template.png": "/Web_Chanh_pharma/static/media/Elegant Beauty and Spa Studio Logo Template.d68becb4b5710a8e4201.png",
-    "static/media/danasa_ginseng.jpg": "/Web_Chanh_pharma/static/media/danasa_ginseng.76adaa36614dbf332b82.jpg",
-    "static/media/slider_1_image_2.png": "/Web_Chanh_pharma/static/media/slider_1_image_2.927d2041e8d827d580ab.png",
-    "static/media/slider_1_image_1.png": "/Web_Chanh_pharma/static/media/slider_1_image_1.3b46bc40a4c8ff148c8c.png",
-    "static/media/slider_1_3.gif": "/Web_Chanh_pharma/static/media/slider_1_3.3e30362c2d5556a481e0.gif",
-    "main.3740cca3.css.map": "/Web_Chanh_pharma/static/css/main.3740cca3.css.map",
-    "main.f7d87044.js.map": "/Web_Chanh_pharma/static/js/main.f7d87044.js.map"
+    "main.css": "/chanh-pharma/static/css/main.3740cca3.css",
+    "main.js": "/chanh-pharma/static/js/main.35ae4cad.js",
+    "index.html": "/chanh-pharma/index.html",
+    "static/media/an_khang_du_thuoc.png": "/chanh-pharma/static/media/an_khang_du_thuoc.f81064fd4e86162eb64d.png",
+    "static/media/slider.png": "/chanh-pharma/static/media/slider.7cda895b9ee9d0c5c702.png",
+    "static/media/deal.png": "/chanh-pharma/static/media/deal.0a09e05d7a330cbf8936.png",
+    "static/media/Elegant Beauty and Spa Studio Logo Template.png": "/chanh-pharma/static/media/Elegant Beauty and Spa Studio Logo Template.d68becb4b5710a8e4201.png",
+    "static/media/danasa_ginseng.jpg": "/chanh-pharma/static/media/danasa_ginseng.76adaa36614dbf332b82.jpg",
+    "static/media/slider_1_image_2.png": "/chanh-pharma/static/media/slider_1_image_2.927d2041e8d827d580ab.png",
+    "static/media/slider_1_image_1.png": "/chanh-pharma/static/media/slider_1_image_1.3b46bc40a4c8ff148c8c.png",
+    "static/media/slider_1_3.gif": "/chanh-pharma/static/media/slider_1_3.3e30362c2d5556a481e0.gif",
+    "main.3740cca3.css.map": "/chanh-pharma/static/css/main.3740cca3.css.map",
+    "main.35ae4cad.js.map": "/chanh-pharma/static/js/main.35ae4cad.js.map"
   },
   "entrypoints": [
     "static/css/main.3740cca3.css",
-    "static/js/main.f7d87044.js"
+    "static/js/main.35ae4cad.js"
   ]
 }
