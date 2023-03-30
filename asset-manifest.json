@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Web_Chanh_pharma/static/css/main.4b618954.css",
-    "main.js": "/Web_Chanh_pharma/static/js/main.d17375e4.js",
+    "main.css": "/Web_Chanh_pharma/static/css/main.3740cca3.css",
+    "main.js": "/Web_Chanh_pharma/static/js/main.1392e8b7.js",
     "index.html": "/Web_Chanh_pharma/index.html",
     "static/media/an_khang_du_thuoc.png": "/Web_Chanh_pharma/static/media/an_khang_du_thuoc.f81064fd4e86162eb64d.png",
     "static/media/slider.png": "/Web_Chanh_pharma/static/media/slider.7cda895b9ee9d0c5c702.png",
@@ -11,11 +11,11 @@
     "static/media/slider_1_image_2.png": "/Web_Chanh_pharma/static/media/slider_1_image_2.927d2041e8d827d580ab.png",
     "static/media/slider_1_image_1.png": "/Web_Chanh_pharma/static/media/slider_1_image_1.3b46bc40a4c8ff148c8c.png",
     "static/media/slider_1_3.gif": "/Web_Chanh_pharma/static/media/slider_1_3.3e30362c2d5556a481e0.gif",
-    "main.4b618954.css.map": "/Web_Chanh_pharma/static/css/main.4b618954.css.map",
-    "main.d17375e4.js.map": "/Web_Chanh_pharma/static/js/main.d17375e4.js.map"
+    "main.3740cca3.css.map": "/Web_Chanh_pharma/static/css/main.3740cca3.css.map",
+    "main.1392e8b7.js.map": "/Web_Chanh_pharma/static/js/main.1392e8b7.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b618954.css",
-    "static/js/main.d17375e4.js"
+    "static/css/main.3740cca3.css",
+    "static/js/main.1392e8b7.js"
   ]
 }
