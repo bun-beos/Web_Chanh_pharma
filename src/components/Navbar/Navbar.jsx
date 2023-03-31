@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 const Navbar = () => {
   return (
-    <div className="fix-position padding-lr-0 hidden-xs hidden-sm hidden-md col-lg-7">
+    <div className="fix-position padding-lr-0 hidden-xs hidden-sm hidden-md main-navbar">
       <div className="main-menu hidden-xs hidden-sm hidden-md">
         <div id="nav">
           <nav className="main-nav">

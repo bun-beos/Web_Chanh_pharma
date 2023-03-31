@@ -66,7 +66,7 @@
   border: 1px solid #f1f1f1;
   border-radius: 4px;
   padding: 0 10px;
-  width: 310px;
+  width: 270px;
   height: 44px;
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
@@ -184,7 +184,7 @@
   width: 9.666667%;
 }
 .logo-main img{
-  margin-left: 60px;
+  margin-left: 0px;
   width: 130px;
   height: 118px;
 }

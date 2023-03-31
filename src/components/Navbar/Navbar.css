@@ -7,5 +7,9 @@
 }
 .main-nav {
   margin-top: 40px;
-  margin-left: 16px;
+  margin-left: 0px;
+}
+.main-navbar {
+  float: left;
+  width: 60%;
 }

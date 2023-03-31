@@ -41,12 +41,10 @@ const mockData = [
     cachdonggoi: "Hộp 12 vỉ x 5 viên",
     hansudung: "36 tháng kể từ ngày sản xuất",
     thumbImages: [
-      // "https://cdn.tgdd.vn/Products/Images/7027/130644/ctt-beliver-250mg-thumb-1-600x600.jpg",
-      "http://127.0.0.1:5500/HTML&CSS/w3_The_Band/assets/image/member/skin-E-do.jpg",
+      "https://web-b-n-b-o.vercel.app/assets/image/member/skin-E-do%20copy.jpg",
     ],
     detailImages: [
-      // "https://cdn.tgdd.vn/Products/Images/7027/130644/ctt-beliver-250mg-thumb-1-600x600.jpg",
-      "http://127.0.0.1:5500/HTML&CSS/w3_The_Band/assets/image/member/skin-E-do.jpg",
+      "https://web-b-n-b-o.vercel.app/assets/image/member/skin-E-do%20copy.jpg",
     ],
   },
   {

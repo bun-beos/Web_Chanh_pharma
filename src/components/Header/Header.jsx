@@ -24,7 +24,7 @@ const Header = () => {
       <div className="main-header hidden-xs"> 
 
         {/* logo  */}
-        <div className="padding-lr-0 col-xs-12 col-sm-3 col-md-3 col-lg-2">
+        <div className="padding-lr-0 col-xs-12 col-sm-3 col-md-3 col-lg-1">
           <div className="logo-main">
               <img
                 src={image_Logo}

@@ -7,7 +7,8 @@ const Footer = () => {
     <footer id="sectionFooter" className="clear-fix">
       <div className="padding-rl-40">
         <div className="innerFooter">
-          <div className="col-xs-12 col-footer-two">
+          
+          <div className="col-xs-3 col-footer-two">
             <div className="innerMenuFooter">
               <h4>
                 Tổng đài
@@ -20,7 +21,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-xs-12 col-footer-two">
+          <div className="col-xs-3 col-footer-two">
             <div className="innerMenuFooter">
               <h4>Hệ thống nhà thuốc</h4>
               <ul>
@@ -33,7 +34,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-xs-12 col-footer-two">
+          <div className="col-xs-3 col-footer-two">
             <div className="innerMenuFooter">
               <h4>Hỗ trợ khách hàng</h4>
               <ul>
@@ -45,7 +46,7 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="col-xs-12 col-footer-two">
+          <div className="col-xs-3 col-footer-two">
             <div className="innerMenuFooter">
               <h4>Về nhà thuốc Chanh Pharma</h4>
               <ul>
