@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import useToken from "../../hooks/useToken";
 import { CheckError } from "../../utils/CheckError";
 import { getAuthHeaders } from "../../utils/GetAuthHeaders";
+
 const Account = () => {
   const [user, setUser] = useState({});
   const { token } = useToken();

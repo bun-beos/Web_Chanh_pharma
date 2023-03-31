@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import {TfiAngleDown} from "react-icons/tfi";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Navbar = () => {
   return (

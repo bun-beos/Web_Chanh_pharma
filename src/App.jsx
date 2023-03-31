@@ -9,6 +9,7 @@ import Collection from "./pages/Collection/Collection";
 import Product from "./pages/Product/Product";
 import NotFound from "./pages/NotFound/NotFound";
 import Body from "./components/Body/Body";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";

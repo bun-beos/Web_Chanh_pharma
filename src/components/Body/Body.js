@@ -6,13 +6,13 @@ import './Body.css'
 // import image_danasa from '../../assets/images/danasa_ginseng.jpg'
 const Body = () => {
     var image_danasa = require('../../assets/images/danasa_ginseng.jpg')
-    var image_Slider = require('../../assets/images/slider.png')
+    var image_Slider = require('../../assets/images/anh_hong_hong.png')
     var image_Slider_1 = require('../../assets/images/slider_1_image_1.png')
-    var image_Slider_2 = require('../../assets/images/slider_1_image_2.png')
-    var image_Slider_1_3 = require('../../assets/images/slider_1_3.gif')
+    var image_Slider_2 = require('../../assets/images/Banner-Slide---Trang-TBYT---592182-592x182.png')
     var image_Deal = require('../../assets/images/deal.png')
-    var an_khang_du_thuoc = require('../../assets/images/an_khang_du_thuoc.png')
+    var an_khang_du_thuoc = require('../../assets/images/AK----Thuc-Pham-Chuc-Nang---1200x200-copy-4-1200x200.png')
     var image_danasa = require('../../assets/images/danasa_ginseng.jpg')
+    var image_hauora = require('../../assets/images/hauora-maxi-white-30-vien-mac-dinh-2.jpg')
   return (
     <div className='body'>
 
@@ -32,7 +32,6 @@ const Body = () => {
 
             <img src={an_khang_du_thuoc} alt="" id='an_khang'/>
 
-            <img src={image_Slider_1_3} alt="" />
         </div>
         {/* An khang luôn đủ thuốc */}
 
@@ -72,7 +71,7 @@ const Body = () => {
                             return (
                             <div className='list_item' key={topsell.id}>
                                 <div className='list_item_image'>
-                                    <img src={image_danasa} alt="" />
+                                    <img src={image_hauora} alt="" />
                                     <div className='list_item_sales'>
                                         <AiFillGift className="gift"/>
                                         <div className="sale_desc">{topsell.sale}</div>

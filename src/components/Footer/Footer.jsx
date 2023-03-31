@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import 'bootstrap/dist/css/bootstrap.css';
+
 const Footer = () => {
   return (
     <footer id="sectionFooter" className="clear-fix">

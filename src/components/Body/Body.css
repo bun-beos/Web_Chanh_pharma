@@ -50,7 +50,7 @@
 }
 
 .body_container {
-    background-color: #e0f8e4;
+    background-color: #ea61b121;
 }
 
 .body_deal {
@@ -64,7 +64,7 @@
     align-items: center;
     flex-direction: column;
     margin: 30px 0;
-    background-color: #c8f3d3;
+    background-color: #fa00913d;
     border-radius: 20px;
 }
 
@@ -160,12 +160,12 @@
 }
 
 .list_item:hover {
-    border: 1px solid #4cb551;
+    border: 1px solid rgb(255, 158, 210);
     transition: 0.5s;
 }
 
 .list_item:hover .list_item_buy{
-    background-color: rgb(5, 184, 5);
+    background-color: rgb(255, 158, 210);
     color: #fff;
     border: none;
     transition: 0.5s;

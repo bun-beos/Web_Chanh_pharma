@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
-import TopBar from "../TopBar/TopBar";
 import useToken from "../../hooks/useToken";
 import { CheckError } from "../../utils/CheckError";
 import "./Header.css";
 import {TfiShoppingCart} from "react-icons/tfi";
 import {TfiUser} from "react-icons/tfi";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const Header = () => {
   // const [cartCount, setCartCount] = useState([]);

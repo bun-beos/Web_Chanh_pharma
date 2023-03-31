@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import mockData from "../../mock/product/product";
 import "./Collection.css";
 import {TfiFilter} from "react-icons/tfi";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const catgoryList = [
   { name: "Giải độc mát gan", id: "shirt" },
@@ -115,9 +116,9 @@ return (
                   {/* Menu */}
                   <ul className="menuCollection">
                     <a className="btn_item"><TfiFilter/>Lọc</a>
-                    <a className="btn_item">Giải độc rượu</a>
+                    {/* <a className="btn_item">Giải độc rượu</a>
                     <a className="btn_item">Giảm nhiệt miệng</a>
-                    <a className="btn_item">Giải độc gan</a>
+                    <a className="btn_item">Giải độc gan</a> */}
                   </ul>
                 </div>
                 

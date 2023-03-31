@@ -6,6 +6,9 @@ import useToken from "../../hooks/useToken";
 import { CheckError } from "../../utils/CheckError";
 import { getAuthHeaders } from "../../utils/GetAuthHeaders";
 import NotFound from "../NotFound/NotFound";
+import "./Product.css" ;
+import 'bootstrap/dist/css/bootstrap.css';
+
 const sizeList = ["S", "M", "L", "XL"];
 async function addProductToCart(orderInfo, token) {
   return fetch("http://localhost:8080/item/" + orderInfo.itemId, {
@@ -47,7 +50,7 @@ const Product = () => {
           token
         );
         setTimeout(() => {
-          navigate("/cart");
+          navigate("/collection/1");
         }, 400);
       }
     }
@@ -113,10 +116,6 @@ const Product = () => {
                       <div className="nameProductDetail" itemprop="name">
                         <h1 style={{ height: 100 }}>{product.name}</h1>
                       </div>
-                      {/* <div className="skuProduct">
-                        <label>SKU:</label>
-                        <span>{product.sku}</span>
-                      </div> */}
                       <div className="infoLine1">
                         <div className="product-price" id="price-preview">
                           <span className="pro-price">{product.price}</span>
@@ -137,9 +136,9 @@ const Product = () => {
                           <p> <b>Thương hiệu: </b> {product.thuonghieu}</p>
                           <p> <b>Nhà sản xuất: </b> {product.nhasanxuat}</p>
                           <p> <b>Nơi sản xuất: </b> {product.noisanxuat}</p>
-                          <p> <b>Dạng bào chế: </b> {product.dangbaoche}</p>
+                          {/* <p> <b>Dạng bào chế: </b> {product.dangbaoche}</p>
                           <p> <b>Cách đóng gói: </b> {product.cachdonggoi}</p>
-                          <p> <b>Hạn sử dụng: </b> {product.hansudung}</p>
+                          <p> <b>Hạn sử dụng: </b> {product.hansudung}</p> */}
                         </div>
                       </div>
                       <form
@@ -156,29 +155,6 @@ const Product = () => {
                               data-option="option2"
                               data-option-index="1"
                             >
-                              {/* <div className="header hide">Kích thước:</div> */}
-                              {/* <div className="select-swap sizeEachSwatch ">
-                                {sizeList.map((size) => (
-                                  <div className="n-sd swatch-element">
-                                    <input
-                                      className="variant-1"
-                                      id={"swatch-1" + size}
-                                      type="radio"
-                                      name="option2"
-                                      value={size}
-                                    />
-                                    <label
-                                      for={"swatch-1" + size}
-                                      className={
-                                        selectedSize === size ? "sd" : ""
-                                      }
-                                      onClick={() => handleSizeSelect(size)}
-                                    >
-                                      <span>{size}</span>
-                                    </label>
-                                  </div>
-                                ))}
-                              </div> */}
                             </div>
                           </div>
                         </div>
@@ -208,7 +184,7 @@ const Product = () => {
                             <button
                               type="button"
                               id="add-to-cart"
-                              className="add-to-cartProduct button dark btn-addtocart addtocart-modal"
+                              className="add-to-cartProduct button btn-addtocart addtocart-modal"
                               name="add"
                               onClick={handleBuyClick}
                             >
