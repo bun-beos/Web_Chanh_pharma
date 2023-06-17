@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
-import Home from "./pages/Home/Home";
 import LogIn from "./pages/LogIn/LogIn";
 import Register from "./pages/Register/Register";
 import Account from "./pages/Account/Account";
@@ -38,7 +37,6 @@ const App = () => {
     <Router>
       <Layout>
         <Routes>
-          {/* <Route exact path="/" element={<Home />}></Route> */}
           <Route path="/" element={<Body />} ></Route>
           <Route exact path="/collection" element={<Collection />}></Route>
           <Route path="/collection/:productId" element={<Product />}></Route>

@@ -40,13 +40,14 @@
 }
 
 .slider_1 .slider_1_double_image img {
-    border-radius: 20px;
+    border-radius: 16px;
     margin: 0 10px;
 }
 
 #an_khang {
     width: 1200px;
     margin-bottom: 20px;
+    border-radius: 16px;
 }
 
 .body_container {

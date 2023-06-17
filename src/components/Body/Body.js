@@ -26,8 +26,8 @@ const Body = () => {
         <div className='slider_1'>
 
             <div className='slider_1_double_image'>
-                <img src={image_Slider_1} alt="hihi" />
-                <img src={image_Slider_2} alt="hihi" />
+                <img src={image_Slider_1} alt="" />
+                <img src={image_Slider_2} alt="" />
             </div>
 
             <img src={an_khang_du_thuoc} alt="" id='an_khang'/>
