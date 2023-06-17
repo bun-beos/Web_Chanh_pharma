@@ -198,13 +198,13 @@ const Product = () => {
                         style={{ textAlign: "center" }}
                       >
                         <span className="titleHotlineProduct">
-                          Mua hàng Online
+                          Mua hàng Online 
                           <a
                             style={{ color: "#f00" }}
-                            href="tel:1800 1732"
-                            title="1800 1732"
+                            href="tel:0123456789"
+                            title="0123456789"
                           >
-                            1800 1732
+                            0123456789
                           </a>
                         </span>
                         <span className="timeWorkProduct">

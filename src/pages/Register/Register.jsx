@@ -4,38 +4,38 @@ import "./Register.css";
 import { useState } from "react";
 import useToken from "../../hooks/useToken";
 
-async function registerUser(credentials) {
-  return fetch("http://localhost:8080/register", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "Access-Control-Allow-Headers": "Content-Type",
-    },
-    body: JSON.stringify(credentials),
-  }).then((data) => data.json());
-}
+// async function registerUser(credentials) {
+//   return fetch("http://localhost:8080/register", {
+//     method: "POST",
+//     headers: {
+//       "Content-Type": "application/json",
+//       "Access-Control-Allow-Headers": "Content-Type",
+//     },
+//     body: JSON.stringify(credentials),
+//   }).then((data) => data.json());
+// }
 
 const Register = () => {
-  const [phone, setPhone] = useState();
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-  const [address, setAddress] = useState();
+  // const [phone, setPhone] = useState();
+  // const [name, setName] = useState();
+  // const [email, setEmail] = useState();
+  // const [password, setPassword] = useState();
+  // const [address, setAddress] = useState();
 
-  const { setToken } = useToken();
-  const navigate = useNavigate();
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const token = await registerUser({
-      phone,
-      password,
-      email,
-      address,
-      name,
-    });
-    setToken(token);
-    navigate("/account");
-  };
+  // const { setToken } = useToken();
+  // const navigate = useNavigate();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   const token = await registerUser({
+  //     phone,
+  //     password,
+  //     email,
+  //     address,
+  //     name,
+  //   });
+  //   setToken(token);
+  //   navigate("/account");
+  // };
 
   return (
     <div className="register">
@@ -85,7 +85,7 @@ const Register = () => {
               action="/account"
               id="create_customer"
               method="post"
-              onSubmit={handleSubmit}
+              // onSubmit={handleSubmit}
             >
               <input name="form_type" type="hidden" value="create_customer" />
               <input name="utf8" type="hidden" />
@@ -102,7 +102,7 @@ const Register = () => {
                   id="name"
                   className="text"
                   size="30"
-                  onChange={(e) => setName(e.target.value)}
+                  // onChange={(e) => setName(e.target.value)}
                 />
               </div>
 
@@ -118,13 +118,13 @@ const Register = () => {
                   id="email"
                   className="text"
                   size="30"
-                  onChange={(e) => setEmail(e.target.value)}
+                  // onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
 
               {/* phone box */}
               <div id="phone" className="clearfix large_form">
-                <label htmlFor="phone" className="label icon-field">
+                <label htmlFor="phone" className="icon-field">
                   <i className="icon-login icon-phone"></i>
                 </label>
                 <input
@@ -135,7 +135,7 @@ const Register = () => {
                   id="phone"
                   className="text"
                   size="30"
-                  onChange={(e) => setPhone(e.target.value)}
+                  // onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
 
@@ -151,7 +151,7 @@ const Register = () => {
                   id="address"
                   className="text"
                   size="30"
-                  onChange={(e) => setAddress(e.target.value)}
+                  // onChange={(e) => setAddress(e.target.value)}
                 />
               </div>
 
@@ -168,7 +168,7 @@ const Register = () => {
                   placeholder="Mật khẩu"
                   className="text"
                   size="16"
-                  onChange={(e) => setPassword(e.target.value)}
+                  // onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
 

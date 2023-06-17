@@ -11,3 +11,11 @@
 .breadcrumb>.active {
     color: black;
 }
+
+input {
+    border-radius: 8px;
+}
+
+.btn.btn-signin {
+    border-radius: 8px;
+}

@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import {TfiAngleDown} from "react-icons/tfi";
 import 'bootstrap/dist/css/bootstrap.css';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -11,15 +12,15 @@ const Navbar = () => {
           <nav className="main-nav">
             <ul className="clearfix" >
               <li>
-                <a href="" >Thuốc<TfiAngleDown className="i_angle_down"/></a>
+                <Link to="" >Thuốc<TfiAngleDown className="i_angle_down"/></Link>
               </li><li>
-                <a href="/collection" >Thực phẩm chức năng<TfiAngleDown className="i_angle_down"/></a>
+                <Link to="/collection" >Thực phẩm chức năng<TfiAngleDown className="i_angle_down"/></Link>
               </li><li>
-                <a href="" >Thiết bị, dụng cụ y tế<TfiAngleDown className="i_angle_down"/></a>
+                <Link to="" >Thiết bị, dụng cụ y tế<TfiAngleDown className="i_angle_down"/></Link>
               </li><li>
-                <a href="" >Mỹ phẩm<TfiAngleDown className="i_angle_down"/></a>
+                <Link to="" >Mỹ phẩm<TfiAngleDown className="i_angle_down"/></Link>
               </li><li>
-                <a href="" >Chăm sóc cá nhân<TfiAngleDown className="i_angle_down"/></a>
+                <Link to="" >Chăm sóc cá nhân<TfiAngleDown className="i_angle_down"/></Link>
               </li>
             </ul>
           </nav>

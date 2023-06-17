@@ -33,7 +33,6 @@ const Body = () => {
             <img src={an_khang_du_thuoc} alt="" id='an_khang'/>
 
         </div>
-        {/* An khang luôn đủ thuốc */}
 
         {/* Begin Deal */}
         <div className='body_container'>
@@ -42,7 +41,6 @@ const Body = () => {
                 {/* List thuốc */}
                 <div className='body_deal_list'>
                     {Data.map((data) => {
-                        // var img_data = require(data.imgUrl);
                         return (
                         <div className='list_item' key={data.id}>
                             <div className='list_item_image'>
@@ -64,6 +62,7 @@ const Body = () => {
             </div>
         </div>
         {/* End Deal */}
+        
         <div className='sells_container'>
                 <h1>SẢN PHẨM BÁN CHẠY</h1>    
                 <div className='body_deal_list'>

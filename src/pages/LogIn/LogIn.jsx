@@ -89,7 +89,7 @@ const LogIn = () => {
 
               {/* phone box */}
               <div className="clearfix large_form">
-                <label htmlFor="phone" className="label icon-field">
+                <label htmlFor="phone" className="icon-field">
                   <i className="icon-login icon-phone"></i>
                 </label>
                 <input
@@ -164,7 +164,7 @@ const LogIn = () => {
 
               {/* phone box */}
               <div id="phone" className="clearfix large_form">
-                <label htmlFor="phone" className="label icon-field">
+                <label htmlFor="phone" className="icon-field">
                   <i className="icon-login icon-phone"></i>
                 </label>
                 <input
@@ -182,7 +182,7 @@ const LogIn = () => {
               {/* button */}
               <div className="clearfix action_account_customer">
                 <div className="action_bottom button dark">
-                  <input type="submit" className="btn" value="Gửi" />
+                  <input type="submit" className="btn btn-signin" value="Gửi" />
                 </div>
                 <div className="req_pass">
                   <Link to="/account/login" onClick={hideRecoverPasswordForm}>
