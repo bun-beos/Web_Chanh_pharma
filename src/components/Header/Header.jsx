@@ -18,7 +18,7 @@ const Header = () => {
   var image_logo = require('../../assets/images/Elegant Beauty and Spa Studio Logo Template.png')
   
   return (
-    <header id="header" className="clearfix">
+    <div className="header clearfix">
       <div className="main-header hidden-xs"> 
 
         {/* logo  */}
@@ -78,7 +78,7 @@ const Header = () => {
           </div>
         {/* </div> */}
       </div>
-    </header>
+    </div>
   );
 };
 

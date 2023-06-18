@@ -9,30 +9,60 @@ const Body = () => {
     var image_Slider = require('../../assets/images/anh_hong_hong.png')
     var image_Slider_1 = require('../../assets/images/slider_1_image_1.png')
     var image_Slider_2 = require('../../assets/images/Banner-Slide---Trang-TBYT---592182-592x182.png')
+    var image_Slider_3 = require('../../assets/images/slider-3.png')
+    var image_Slider_4 = require('../../assets/images/slider-4.png')
+    var image_Slider_5 = require('../../assets/images/slider-5.png')
+    var image_Slider_6 = require('../../assets/images/slider-6.png')
     var image_Deal = require('../../assets/images/deal.png')
-    var an_khang_du_thuoc = require('../../assets/images/AK----Thuc-Pham-Chuc-Nang---1200x200-copy-4-1200x200.png')
-    var image_danasa = require('../../assets/images/danasa_ginseng.jpg')
+    var thuc_pham_chuc_nang = require('../../assets/images/AK----Thuc-Pham-Chuc-Nang---1200x200-copy-4-1200x200.png')
     var image_hauora = require('../../assets/images/hauora-maxi-white-30-vien-mac-dinh-2.jpg')
-  return (
+  
+    let slideIndex = 0;
+    function showSlides(n) {
+    //     let i;
+        let slides = document.getElementsByClassName("slider_double_image")
+    //     // if (n > slides.length) slideIndex = 1 
+    //     // if (n < 1) { slideIndex = slides.length }
+    //     // for (i = 0; i < slides.length; i++) {
+    //     //     slides[i].style.display = "none";
+    //     // }
+    //     // slides[slideIndex].style.display = "block";
+        console.log(slides)
+    }
+    showSlides(slideIndex);
+    // function plusSlides(n) {
+    //     showSlides(slideIndex += n);
+    // }
+
+return (
     <div className='body'>
 
-        {/* Begin Slider  */}
         <div className='body_slider'>
             <img src={image_Slider} alt="" />
         </div>
-        {/* End Slider */}
         
-        {/* An khang luôn đủ thuốc */}
-        <div className='slider_1'>
-
-            <div className='slider_1_double_image'>
+        {/* Begin Slider  */}
+        <div className='slider'>
+            <div className='slider_double_image'>
                 <img src={image_Slider_1} alt="" />
                 <img src={image_Slider_2} alt="" />
             </div>
+            {/* <div className='slider_double_image'>
+                <img src={image_Slider_3} alt="" />
+                <img src={image_Slider_4} alt="" />
+            </div>
+            <div className='slider_double_image'>
+                <img src={image_Slider_5} alt="" />
+                <img src={image_Slider_6} alt="" />
+            </div> */}
 
-            <img src={an_khang_du_thuoc} alt="" id='an_khang'/>
-
+            <button class="prev" >❮</button>
+            <button class="next" >❯</button>
         </div>
+        {/* End Slider */}
+
+        {/* An khang luôn đủ thuốc */}
+        <img src={thuc_pham_chuc_nang} alt="" id='an_khang'/>
 
         {/* Begin Deal */}
         <div className='body_container'>

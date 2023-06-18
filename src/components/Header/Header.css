@@ -1,6 +1,7 @@
- #header {
-  width: 100%;
+ .header {
   background-color: #e84e72;
+  position: fixed;
+  z-index: 10;
 }
 .padding-lr-0 {
   padding: 0;
@@ -39,9 +40,8 @@
 .main-header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 10px;
+  padding: 8px 16px;
   float: left;
-  width: 100%;
   position: relative;
 }
 #header.fixed .main-header {
@@ -99,5 +99,5 @@
 .logo {
   display: inline-block;
   float: left;
-  width: 8%;
+  width: 7%;
 }
